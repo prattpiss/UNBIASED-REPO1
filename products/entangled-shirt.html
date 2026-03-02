@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNBIASED</title>
+  <meta name="description" content="Premium Streetwear from Germany">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/theme.css">
+  
+  <style>
+    :root {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    }
+  </style>
+  
+</head>
+<body>
+  <!-- ═══ ANNOUNCEMENT BAR ═══ -->
+
+
+<div class="announcement-bar" id="announcement-bar">
+  <div class="announcement-bar__inner">
+    <p class="announcement-bar__text">🔥 KOSTENLOSER VERSAND AB 50€ 🔥</p>
+  </div>
+</div>
+
+
+  <!-- ═══ HEADER ═══ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <!-- Mobile menu toggle -->
+    <button class="header__menu-toggle" id="mobile-menu-toggle" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Logo -->
+    <a href="index.html" class="header__logo">
+      
+        UNBIASED
+      
+    </a>
+
+    <!-- Navigation -->
+    <nav class="header__nav" id="main-nav">
+      <ul class="header__nav-list">
+        
+          <li><a href="collections/all.html" class="header__nav-link">Shop</a></li>
+        
+          <li><a href="pages/uber-uns.html" class="header__nav-link">Über uns</a></li>
+        
+          <li><a href="pages/faq.html" class="header__nav-link">FAQ</a></li>
+        
+          <li><a href="pages/contact.html" class="header__nav-link">Kontakt</a></li>
+        
+      </ul>
+    </nav>
+
+    <!-- Actions -->
+    <div class="header__actions">
+      <button class="header__action-btn cart-toggle" id="cart-toggle" aria-label="Warenkorb">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <ul class="mobile-nav__list">
+      
+        <li><a href="collections/all.html" class="mobile-nav__link">Shop</a></li>
+      
+        <li><a href="pages/uber-uns.html" class="mobile-nav__link">Über uns</a></li>
+      
+        <li><a href="pages/faq.html" class="mobile-nav__link">FAQ</a></li>
+      
+        <li><a href="pages/contact.html" class="mobile-nav__link">Kontakt</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+  <main id="main-content" role="main">
+    <!-- ═══ PRODUCT PAGE ═══ -->
+<section class="section product-page">
+  <div class="container">
+    <div class="product-layout">
+      <!-- Image Gallery -->
+      <div class="product-gallery">
+        <div class="product-gallery__main">
+          
+            <img id="product-main-image" src="uploads/images/e5115d59-e715-42f5-8e00-e714dcf3dbf0.png" alt="Screenshot 2026-03-01 221415" class="product-gallery__img">
+          
+        </div>
+        
+      </div>
+
+      <!-- Product Info -->
+      <div class="product-info">
+        <div class="product-info__vendor">UNBIASED</div>
+        <h1 class="product-info__title">ENTANGLED Shirt</h1>
+
+        <div class="product-info__price" id="product-price">
+          
+            <span class="price price--sale">12,99 €</span>
+            <span class="price price--compare">17,99 €</span>
+            <span class="price-badge">Sale</span>
+          
+        </div>
+
+        <p class="product-info__tax-note">inkl. MwSt. zzgl. <a href="pages/versand-und-rueckgabe.html">Versandkosten</a></p>
+
+        <!-- Variant Selector -->
+        <form id="product-form" class="product-form" data-product-id="9df948c2-8cb2-4e2f-bf81-160b87059bb5">
+          
+
+          <input type="hidden" name="variant_id" id="selected-variant-id" value="2d2d6d1c-7fed-4812-bc1e-87f9e32b2535">
+
+          <div class="product-form__quantity">
+            <label class="product-form__label">Menge</label>
+            <div class="quantity-selector">
+              <button type="button" class="quantity-btn" data-action="decrease">−</button>
+              <input type="number" name="quantity" id="product-quantity" value="1" min="1" max="99">
+              <button type="button" class="quantity-btn" data-action="increase">+</button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full btn--large add-to-cart-btn" id="add-to-cart">
+            In den Warenkorb
+          </button>
+        </form>
+
+  <!-- PayPal Smart Button -->
+  <script src="https://www.paypal.com/sdk/js?client-id=AWj2qRQUNTh8T6bRtLad4l6hAHm5cJwALExN2xmNvf00fwFEcYWhBLne98kKDfKeuJrM0gXi2ENaHQ6K&currency=EUR&locale=de_DE"></script>
+  <div id="paypal-button-container" style="max-width:400px;margin:24px 0;"></div>
+  <script>
+    paypal.Buttons({
+      style: { layout: 'vertical', color: 'black', shape: 'rect', label: 'pay' },
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            description: 'ENTANGLED Shirt',
+            amount: { currency_code: 'EUR', value: '12.99' }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          document.getElementById('paypal-button-container').innerHTML =
+            '<div style="padding:20px;background:#ecfdf5;border-radius:12px;text-align:center;color:#065f46;font-weight:600;">' +
+            '✓ Zahlung erfolgreich! Danke, ' + details.payer.name.given_name + '!</div>';
+        });
+      },
+      onError: function(err) {
+        console.error('PayPal Error:', err);
+        alert('Zahlung fehlgeschlagen. Bitte versuche es erneut.');
+      }
+    }).render('#paypal-button-container');
+  </script>
+
+        <div class="product-info__description">
+          
+        </div>
+
+        
+          <div class="product-info__tags">
+            
+              <span class="tag">streetwear</span>
+            
+              <span class="tag">premium</span>
+            
+              <span class="tag">recycled</span>
+            
+              <span class="tag">green</span>
+            
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    
+      <div class="related-products">
+        <h2 class="section__title">Das könnte dir auch gefallen</h2>
+        <div class="product-grid product-grid--4">
+          
+            <!-- ═══ PRODUCT CARD (Snippet) ═══ -->
+<div class="product-card">
+  <a href="products/stop-thinking-shirt.html" class="product-card__link">
+    <div class="product-card__image-wrap">
+      
+        <img src="uploads/images/120ebcec-d91c-4386-b488-b212de748059.png" alt="STOP THINKING Shirt" class="product-card__image" loading="lazy">
+      
+      
+    </div>
+    <div class="product-card__info">
+      <h3 class="product-card__title">STOP THINKING Shirt</h3>
+      <div class="product-card__price">
+        
+          <span class="price">4,99 €</span>
+        
+      </div>
+    </div>
+  </a>
+</div>
+
+          
+        </div>
+      </div>
+    
+  </div>
+</section>
+
+<script>
+  // Variant data for JS
+  window.__PRODUCT_VARIANTS__ = [{"id":"2d2d6d1c-7fed-4812-bc1e-87f9e32b2535","product_id":"9df948c2-8cb2-4e2f-bf81-160b87059bb5","title":"S","sku":"ENTANGLED-S","barcode":"","price_cents":1299,"compare_at_price_cents":1799,"cost_cents":null,"weight_grams":0,"inventory_quantity":9,"inventory_policy":"deny","requires_shipping":1,"taxable":1,"option1":"","option2":"","option3":"","position":0,"created_at":"2026-03-01 21:23:55"},{"id":"bd39b99e-36c4-40b4-a814-9492b53bab94","product_id":"9df948c2-8cb2-4e2f-bf81-160b87059bb5","title":"M","sku":"ENTANGLED-M","barcode":"","price_cents":1299,"compare_at_price_cents":1799,"cost_cents":null,"weight_grams":0,"inventory_quantity":10,"inventory_policy":"deny","requires_shipping":1,"taxable":1,"option1":"","option2":"","option3":"","position":1,"created_at":"2026-03-01 21:23:55"},{"id":"68814fa0-cf43-4457-b10d-38b9b919a4f9","product_id":"9df948c2-8cb2-4e2f-bf81-160b87059bb5","title":"L","sku":"ENTANGLED-L","barcode":"","price_cents":1299,"compare_at_price_cents":1799,"cost_cents":null,"weight_grams":0,"inventory_quantity":10,"inventory_policy":"deny","requires_shipping":1,"taxable":1,"option1":"","option2":"","option3":"","position":2,"created_at":"2026-03-01 21:23:55"},{"id":"9a453fc6-b972-4f81-bb40-185d9f6ac899","product_id":"9df948c2-8cb2-4e2f-bf81-160b87059bb5","title":"XL","sku":"ENTANGLED-XL","barcode":"","price_cents":1299,"compare_at_price_cents":1799,"cost_cents":null,"weight_grams":0,"inventory_quantity":10,"inventory_policy":"deny","requires_shipping":1,"taxable":1,"option1":"","option2":"","option3":"","position":3,"created_at":"2026-03-01 21:23:55"}];
+</script>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__heading">UNBIASED</h3>
+        <p class="footer__text">Premium Streetwear from Germany</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">Navigation</h3>
+        <ul class="footer__links">
+          
+            <li><a href="collections/all.html">Shop</a></li>
+          
+            <li><a href="pages/uber-uns.html">Über uns</a></li>
+          
+            <li><a href="pages/faq.html">FAQ</a></li>
+          
+            <li><a href="pages/contact.html">Kontakt</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">Rechtliches</h3>
+        <ul class="footer__links">
+          
+            <li><a href="pages/impressum.html">Impressum</a></li>
+          
+            <li><a href="pages/datenschutz.html">Datenschutz</a></li>
+          
+            <li><a href="pages/agb.html">AGB</a></li>
+          
+            <li><a href="pages/widerrufsrecht.html">Widerrufsrecht</a></li>
+          
+            <li><a href="pages/versand-und-rueckgabe.html">Versand & Rückgabe</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__heading">Kontakt</h3>
+        <ul class="footer__links">
+          
+            <li><a href="mailto:info@unbiased.com">info@unbiased.com</a></li>
+          
+          <li><a href="pages/contact.html">Kontaktformular</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 UNBIASED. Alle Rechte vorbehalten.</p>
+      <p class="footer__powered">Powered by <a href="#">ShopForge</a></p>
+    </div>
+  </div>
+</footer>
+
+  <!-- ═══ CART DRAWER (Slide-out) ═══ -->
+<div class="cart-drawer" id="cart-drawer" hidden>
+  <div class="cart-drawer__overlay" id="cart-drawer-overlay"></div>
+  <div class="cart-drawer__panel">
+    <div class="cart-drawer__header">
+      <h2>Warenkorb</h2>
+      <button class="cart-drawer__close" id="cart-drawer-close" aria-label="Schließen">✕</button>
+    </div>
+    <div class="cart-drawer__items" id="cart-drawer-items">
+      <!-- Filled dynamically by JS -->
+      <div class="cart-drawer__empty">
+        <p>Dein Warenkorb ist leer.</p>
+      </div>
+    </div>
+    <div class="cart-drawer__footer" id="cart-drawer-footer">
+      <div class="cart-drawer__total">
+        <span>Gesamt</span>
+        <span id="cart-drawer-total">0,00 €</span>
+      </div>
+      <a href="cart.html" class="btn btn--primary btn--full">Zum Warenkorb</a>
+    </div>
+  </div>
+</div>
+
+
+  <script src="assets/theme.js"></script>
+</body>
+</html>
