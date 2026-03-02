@@ -32,6 +32,14 @@
     }
   </style>
   
+
+  <!-- PayPal SDK (for cart checkout) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=AWj2qRQUNTh8T6bRtLad4l6hAHm5cJwALExN2xmNvf00fwFEcYWhBLne98kKDfKeuJrM0gXi2ENaHQ6K&currency=EUR&locale=de_DE&enable-funding=paypal&disable-funding=credit,card" defer></script>
+
+  <script>
+    window.__SHOP_NAME__ = 'UNBIASED';
+    window.__SHOP_CURRENCY__ = 'EUR';
+  </script>
 </head>
 <body>
   <!-- ═══ ANNOUNCEMENT BAR ═══ -->
@@ -232,12 +240,12 @@
         <span>Gesamt</span>
         <span id="cart-drawer-total">0,00 €</span>
       </div>
-      <a href="cart.html" class="btn btn--primary btn--full">Zum Warenkorb</a>
+      <div id="cart-paypal-container" style="margin-bottom:12px;display:none;"></div><p style="text-align:center;font-size:0.75rem;color:#888;margin:0 0 8px;">Bezahlung über PayPal — sicher & schnell</p>
     </div>
   </div>
 </div>
 
 
-  <script src="assets/theme.js"></script>
+  <script src="assets/theme-static.js"></script>
 </body>
 </html>

@@ -32,6 +32,14 @@
     }
   </style>
   
+
+  <!-- PayPal SDK (for cart checkout) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=AWj2qRQUNTh8T6bRtLad4l6hAHm5cJwALExN2xmNvf00fwFEcYWhBLne98kKDfKeuJrM0gXi2ENaHQ6K&currency=EUR&locale=de_DE&enable-funding=paypal&disable-funding=credit,card" defer></script>
+
+  <script>
+    window.__SHOP_NAME__ = 'UNBIASED';
+    window.__SHOP_CURRENCY__ = 'EUR';
+  </script>
 </head>
 <body>
   <!-- ═══ ANNOUNCEMENT BAR ═══ -->
@@ -151,34 +159,6 @@
             In den Warenkorb
           </button>
         </form>
-
-  <!-- PayPal Smart Button -->
-  <script src="https://www.paypal.com/sdk/js?client-id=AWj2qRQUNTh8T6bRtLad4l6hAHm5cJwALExN2xmNvf00fwFEcYWhBLne98kKDfKeuJrM0gXi2ENaHQ6K&currency=EUR&locale=de_DE"></script>
-  <div id="paypal-button-container" style="max-width:400px;margin:24px 0;"></div>
-  <script>
-    paypal.Buttons({
-      style: { layout: 'vertical', color: 'black', shape: 'rect', label: 'pay' },
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{
-            description: 'ENTANGLED Shirt',
-            amount: { currency_code: 'EUR', value: '12.99' }
-          }]
-        });
-      },
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          document.getElementById('paypal-button-container').innerHTML =
-            '<div style="padding:20px;background:#ecfdf5;border-radius:12px;text-align:center;color:#065f46;font-weight:600;">' +
-            '✓ Zahlung erfolgreich! Danke, ' + details.payer.name.given_name + '!</div>';
-        });
-      },
-      onError: function(err) {
-        console.error('PayPal Error:', err);
-        alert('Zahlung fehlgeschlagen. Bitte versuche es erneut.');
-      }
-    }).render('#paypal-button-container');
-  </script>
 
         <div class="product-info__description">
           
@@ -314,12 +294,12 @@
         <span>Gesamt</span>
         <span id="cart-drawer-total">0,00 €</span>
       </div>
-      <a href="cart.html" class="btn btn--primary btn--full">Zum Warenkorb</a>
+      <div id="cart-paypal-container" style="margin-bottom:12px;display:none;"></div><p style="text-align:center;font-size:0.75rem;color:#888;margin:0 0 8px;">Bezahlung über PayPal — sicher & schnell</p>
     </div>
   </div>
 </div>
 
 
-  <script src="assets/theme.js"></script>
+  <script src="assets/theme-static.js"></script>
 </body>
 </html>
